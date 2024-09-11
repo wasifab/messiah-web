@@ -6,9 +6,9 @@
     margin-top: 0;
     margin-bottom: 30px;
     @include breakpoint('small') {
-      width: 80%;
-      font-size: 88px;
-      line-height: 94px;
+      width: 60%;
+      font-size: 68px;
+      line-height: 74px;
       margin-bottom: 50px;
     }
     strong {
@@ -23,12 +23,13 @@
     }
   }
   p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
+    margin-top: 20px;
     @include breakpoint('small') {
-      width: 80%;
-      font-size: 22px;
-      line-height: 32px;
+      width: 70%;
+      font-size: 20px;
+      line-height: 26px;
     }
   }
   .read-more {
@@ -41,7 +42,11 @@
     }
   }
   img {
-    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+    @include breakpoint('small') {
+        width: 80%;
+      }
   }
   // img {
   //   margin-right: -30px;

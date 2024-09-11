@@ -242,9 +242,9 @@ ul {
     margin-bottom: 30px; }
     @media (min-width: 767px) {
       .intro h1 {
-        width: 80%;
-        font-size: 88px;
-        line-height: 94px;
+        width: 60%;
+        font-size: 68px;
+        line-height: 74px;
         margin-bottom: 50px; } }
     .intro h1 strong {
       color: var(--highlight-color); }
@@ -255,13 +255,14 @@ ul {
       .intro h2 {
         width: 80%; } }
   .intro p {
-    font-size: 20px;
-    line-height: 26px; }
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px; }
     @media (min-width: 767px) {
       .intro p {
-        width: 80%;
-        font-size: 22px;
-        line-height: 32px; } }
+        width: 70%;
+        font-size: 20px;
+        line-height: 26px; } }
   .intro .read-more {
     font-size: 20px;
     line-height: 26px;
@@ -271,8 +272,11 @@ ul {
         font-size: 22px;
         line-height: 32px; } }
   .intro img {
-    max-width: 100%; }
-
+    width: 100%;
+    margin-top: 30px; }
+    @media (min-width: 767px) {
+      .intro img {
+        width: 80%; } }
 .summary {
   margin-bottom: 50px;
   font-size: 18px;
@@ -794,12 +798,15 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 20px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh; }
   @media (min-width: 767px) {
     body {
-      padding: 50px; } }
+      padding: 50px;
+      min-height: 100vh; } }
   body.frame {
-    min-height: 100vh;
+    max-height: 100vh;
     border: 18px solid var(--highlight-color); }
 
 .wrapper {

@@ -50,7 +50,7 @@
     {{ partial "header.html" . }}
     {{ block "main" . }}
     {{ end }}
-    {{ partial "footer.html" . }}
+    {{/*  {{ partial "footer.html" . }}  */}}
   </div>
 
   {{ $scripts := resources.Get "js/scripts.js" }}
@@ -63,10 +63,10 @@
     <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 
-  {{ block "footer_js" . }}
+  {{/*  {{ block "footer_js" . }}
   {{ end }}
 
-  {{ partial "extend-footer.html" . }}
+  {{ partial "extend-footer.html" . }}  */}}
 
 </body>
 </html>
