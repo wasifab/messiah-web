@@ -46,10 +46,10 @@ body {
   
   @include breakpoint('small') {
     padding: 50px;
-    min-height: 100vh;
+    max-height: 100vh;
   }
   &.frame {
-    max-height: 100vh;
+    min-height: 100vh;
     border: 18px solid var(--highlight-color);
   }
 }
